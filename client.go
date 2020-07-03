@@ -6,12 +6,10 @@ import (
 	"github.com/go-resty/resty/v2"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
-	"gobot.io/x/gobot"
 )
 
 type Client struct {
 	resty *resty.Client
-	gobot.Eventer
 }
 
 func NewClient(url string) client {
